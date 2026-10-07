@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Madzena Attorneys | Strong Defence. Clear Advice. Real Results.</title>
+  <meta name="description" content="Madzena Attorneys provides legal representation and advice in criminal law, civil litigation, labour matters, divorce, maintenance, unlawful arrest, wills and trusts, RAF claims and administration of estates.">
+  <meta name="theme-color" content="#071b2d">
+  <meta property="og:title" content="Madzena Attorneys">
+  <meta property="og:description" content="Your case, our priority. Strong defence. Clear advice. Real results.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/madzena-attorney.jpg">
+
+  <style>
+    :root{
+      --navy:#071b2d;
+      --navy-2:#0c2a43;
+      --gold:#c79a4a;
+      --gold-2:#e1bd73;
+      --cream:#f7f3ea;
+      --white:#fff;
+      --ink:#172432;
+      --muted:#66717d;
+      --line:#e6e0d5;
+      --shadow:0 20px 60px rgba(7,27,45,.12);
+      --radius:22px;
+      --max:1180px;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{
+      font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      color:var(--ink);background:#fff;line-height:1.65;
+    }
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+    .container{width:min(var(--max),92%);margin:auto}
+    .eyebrow{font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;font-weight:800;color:var(--gold)}
+    h1,h2,h3{font-family:Georgia,"Times New Roman",serif;line-height:1.12}
+    h1{font-size:clamp(3rem,6vw,5.6rem)}
+    h2{font-size:clamp(2.2rem,4vw,3.6rem)}
+    h3{font-size:1.45rem}
+    .btn{
+      display:inline-flex;align-items:center;justify-content:center;gap:10px;
+      min-height:52px;padding:0 22px;border-radius:999px;font-weight:800;
+      border:1px solid transparent;cursor:pointer;transition:.2s ease;
+    }
+    .btn:hover{transform:translateY(-2px)}
+    .btn-gold{background:var(--gold);color:var(--navy)}
+    .btn-dark{background:var(--navy);color:#fff}
+    .btn-outline{border-color:rgba(255,255,255,.35);color:#fff}
+    .btn-outline-dark{border-color:var(--navy);color:var(--navy)}
+    .topbar{background:var(--navy);color:#dce5ec;font-size:.84rem}
+    .topbar .container{min-height:40px;display:flex;justify-content:space-between;align-items:center;gap:20px}
+    .topbar a{color:#fff}
+    header{
+      position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);
+      backdrop-filter:blur(16px);border-bottom:1px solid rgba(7,27,45,.08)
+    }
+    nav{height:78px;display:flex;align-items:center;justify-content:space-between;gap:30px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .brand-mark{
+      width:48px;height:48px;border:2px solid var(--gold);border-radius:50%;
+      display:grid;place-items:center;color:var(--navy);font-family:Georgia;font-size:23px
+    }
+    .brand strong{font-family:Georgia,serif;font-size:1.1rem;letter-spacing:.04em}
+    .brand small{display:block;color:var(--gold);font-size:.64rem;letter-spacing:.2em}
+    .navlinks{display:flex;align-items:center;gap:26px;font-size:.92rem;font-weight:700}
+    .navlinks a:hover{color:var(--gold)}
+    .menu{display:none;background:none;border:0;font-size:28px;color:var(--navy)}
+    .hero{background:linear-gradient(135deg,var(--navy) 0%,#0a304b 62%,#123e59 100%);color:#fff;overflow:hidden}
+    .hero-grid{display:grid;grid-template-columns:1.03fr .97fr;min-height:720px;align-items:center;gap:50px}
+    .hero-copy{padding:90px 0}
+    .hero-copy .eyebrow{color:var(--gold-2)}
+    .hero-copy h1{margin:18px 0 24px}
+    .hero-copy h1 span{color:var(--gold-2)}
+    .hero-copy p{max-width:650px;color:#d6e0e7;font-size:1.08rem}
+    .hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+    .hero-points{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px;color:#dbe5eb;font-size:.88rem}
+    .hero-points span{padding:8px 12px;border:1px solid rgba(255,255,255,.14);border-radius:999px}
+    .hero-visual{position:relative;align-self:stretch;display:flex;align-items:flex-end;justify-content:center}
+    .hero-card{
+      width:min(520px,100%);height:650px;margin-top:70px;border-radius:280px 280px 32px 32px;
+      overflow:hidden;border:10px solid rgba(199,154,74,.85);box-shadow:0 30px 80px rgba(0,0,0,.28);
+      background:#eae5da
+    }
+    .hero-card img{width:100%;height:100%;object-fit:cover;object-position:center top}
+    .trust{background:var(--cream);border-bottom:1px solid var(--line)}
+    .trust-grid{display:grid;grid-template-columns:repeat(3,1fr);padding:28px 0;gap:20px}
+    .trust-item{text-align:center;padding:8px 20px;border-right:1px solid var(--line)}
+    .trust-item:last-child{border:0}
+    .trust-item strong{display:block;font-family:Georgia;font-size:1.2rem}
+    .trust-item span{font-size:.86rem;color:var(--muted)}
+    section{padding:100px 0}
+    .section-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:46px}
+    .section-head p{max-width:560px;color:var(--muted)}
+    .about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px;align-items:center}
+    .about-panel{background:var(--cream);border-radius:var(--radius);padding:42px;box-shadow:var(--shadow)}
+    .about-panel blockquote{font-family:Georgia;font-size:1.55rem;line-height:1.4;color:var(--navy)}
+    .about-panel cite{display:block;margin-top:18px;color:var(--gold);font-style:normal;font-weight:800}
+    .about-copy p{color:var(--muted);margin:18px 0}
+    .feature-list{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin-top:28px}
+    .feature{display:flex;gap:12px;align-items:flex-start}
+    .check{width:27px;height:27px;border-radius:50%;display:grid;place-items:center;background:var(--navy);color:var(--gold);flex:none;font-size:.8rem}
+    .services{background:#f9fafb}
+    .service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .service{
+      background:#fff;border:1px solid #e9edf0;border-radius:18px;padding:30px;min-height:205px;
+      transition:.2s ease;position:relative;overflow:hidden
+    }
+    .service:after{content:"";position:absolute;left:0;bottom:0;width:0;height:3px;background:var(--gold);transition:.25s}
+    .service:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+    .service:hover:after{width:100%}
+    .service-icon{width:48px;height:48px;border-radius:14px;background:var(--navy);color:var(--gold-2);display:grid;place-items:center;font-size:1.2rem;margin-bottom:18px}
+    .service p{color:var(--muted);font-size:.92rem;margin-top:9px}
+    .process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+    .step{padding:30px;border-top:2px solid var(--gold);background:#fff;box-shadow:0 12px 35px rgba(7,27,45,.06)}
+    .step b{font-family:Georgia;color:var(--gold);font-size:2.2rem}
+    .step h3{margin:12px 0 8px}
+    .step p{color:var(--muted);font-size:.9rem}
+    .cta{background:var(--navy);color:#fff}
+    .cta-box{display:flex;align-items:center;justify-content:space-between;gap:30px}
+    .cta p{color:#cbd7df;max-width:650px;margin-top:12px}
+    .contact{background:var(--cream)}
+    .contact-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:45px}
+    .contact-cards{display:grid;gap:14px}
+    .contact-card{background:#fff;border-radius:16px;padding:22px;border:1px solid var(--line)}
+    .contact-card span{display:block;color:var(--gold);font-size:.75rem;font-weight:800;text-transform:uppercase;letter-spacing:.12em}
+    .contact-card strong{display:block;margin-top:5px}
+    .form{background:#fff;padding:35px;border-radius:22px;box-shadow:var(--shadow)}
+    .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    label{font-size:.8rem;font-weight:800;color:var(--navy);display:block;margin-bottom:6px}
+    input,textarea,select{
+      width:100%;border:1px solid #dce2e6;border-radius:11px;padding:13px 14px;
+      font:inherit;outline:none;background:#fff
+    }
+    input:focus,textarea:focus,select:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(199,154,74,.14)}
+    textarea{min-height:150px;resize:vertical}
+    .full{grid-column:1/-1}
+    .form-note{font-size:.78rem;color:var(--muted);margin-top:10px}
+    footer{background:#04131f;color:#b8c6d0;padding:55px 0 25px}
+    .footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:45px}
+    footer h3{color:#fff;font-size:1.25rem;margin-bottom:15px}
+    footer p,footer li{font-size:.88rem}
+    footer ul{list-style:none;display:grid;gap:8px}
+    footer a:hover{color:var(--gold-2)}
+    .copyright{border-top:1px solid rgba(255,255,255,.1);margin-top:40px;padding-top:20px;font-size:.78rem;display:flex;justify-content:space-between;gap:20px}
+    .reveal{opacity:0;transform:translateY(20px);transition:.65s ease}
+    .reveal.show{opacity:1;transform:none}
+    #success{display:none;margin-top:15px;padding:13px 15px;border-radius:10px;background:#edf8f1;color:#1e6b3d;font-size:.9rem}
+    @media(max-width:900px){
+      .navlinks{display:none;position:absolute;left:0;right:0;top:78px;background:#fff;padding:20px 4%;border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start}
+      .navlinks.open{display:flex}.menu{display:block}
+      .hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr}
+      .hero-copy{padding:75px 0 20px}.hero-visual{min-height:570px}
+      .hero-card{height:560px;margin-top:10px}
+      .service-grid{grid-template-columns:1fr 1fr}.process-grid{grid-template-columns:1fr 1fr}
+      .footer-grid{grid-template-columns:1fr 1fr}.cta-box{align-items:flex-start;flex-direction:column}
+    }
+    @media(max-width:600px){
+      .topbar .container{justify-content:center}.topbar .hide-mobile{display:none}
+      nav{height:70px}.navlinks{top:70px}
+      .hero-grid{min-height:auto}.hero-copy{padding:65px 0 10px}
+      .hero-card{height:500px;border-width:7px}
+      .trust-grid,.service-grid,.process-grid,.footer-grid{grid-template-columns:1fr}
+      .trust-item{border-right:0;border-bottom:1px solid var(--line);padding:14px}
+      .trust-item:last-child{border-bottom:0}
+      section{padding:75px 0}.section-head{display:block}.section-head p{margin-top:15px}
+      .feature-list,.form-grid{grid-template-columns:1fr}.full{grid-column:auto}
+      .about-panel{padding:28px}.form{padding:24px}
+      .copyright{display:block}.copyright span{display:block;margin-top:7px}
+    }
+  </style>
+</head>
+
+<body>
+  <div class="topbar">
+    <div class="container">
+      <span class="hide-mobile">Madzena Attorneys — Your case, our priority.</span>
+      <span><a href="tel:+27649786766">064 978 6766</a> &nbsp;|&nbsp; <a href="tel:+27720728412">072 072 8412</a></span>
+    </div>
+  </div>
+
+  <header>
+    <nav class="container">
+      <a class="brand" href="#home" aria-label="Madzena Attorneys home">
+        <div class="brand-mark">⚖</div>
+        <div><strong>MADZENA</strong><small>ATTORNEYS</small></div>
+      </a>
+      <button class="menu" id="menu" aria-label="Open navigation">☰</button>
+      <div class="navlinks" id="navlinks">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#process">Process</a>
+        <a href="#contact">Contact</a>
+        <a class="btn btn-dark" href="#contact">Book a Consultation</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <div class="eyebrow">Madzena Attorneys</div>
+          <h1>Strong Defence.<br><span>Clear Advice.</span><br>Real Results.</h1>
+          <p>Focused legal representation and practical advice built around your rights, your circumstances and your desired outcome.</p>
+          <div class="hero-actions">
+            <a class="btn btn-gold" href="#contact">Request a Consultation →</a>
+            <a class="btn btn-outline" href="tel:+27649786766">Call 064 978 6766</a>
+          </div>
+          <div class="hero-points">
+            <span>Confidential consultations</span>
+            <span>Johannesburg</span>
+            <span>Client-focused representation</span>
+          </div>
+        </div>
+        <div class="hero-visual reveal">
+          <div class="hero-card">
+            <img src="assets/madzena-attorney.jpg" alt="Madzena Attorneys legal practitioner">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="trust">
+      <div class="container trust-grid">
+        <div class="trust-item"><strong>Experienced</strong><span>Professional legal representation</span></div>
+        <div class="trust-item"><strong>Dedicated</strong><span>Focused attention to every matter</span></div>
+        <div class="trust-item"><strong>Results Driven</strong><span>Strategy built around your case</span></div>
+      </div>
+    </div>
+
+    <section id="about">
+      <div class="container about-grid">
+        <div class="about-panel reveal">
+          <div class="eyebrow">Our approach</div>
+          <blockquote>“At Madzena Attorneys, we are committed to protecting your rights and achieving the best possible outcomes for you.”</blockquote>
+          <cite>— Madzena Attorneys</cite>
+        </div>
+        <div class="about-copy reveal">
+          <div class="eyebrow">Why Madzena</div>
+          <h2>Legal advice with a clear strategy.</h2>
+          <p>Legal problems can move quickly. Our approach is built around understanding the facts, identifying the legal issues and giving clients a clear path forward.</p>
+          <p>Whether you need representation, advice, document assistance or guidance through a dispute, the objective is the same: protect your interests and handle your matter with diligence.</p>
+          <div class="feature-list">
+            <div class="feature"><div class="check">✓</div><div><strong>Clear communication</strong><br><small>Understand your options and next steps.</small></div></div>
+            <div class="feature"><div class="check">✓</div><div><strong>Strategic preparation</strong><br><small>Build the case around the relevant facts.</small></div></div>
+            <div class="feature"><div class="check">✓</div><div><strong>Client confidentiality</strong><br><small>Handle sensitive matters professionally.</small></div></div>
+            <div class="feature"><div class="check">✓</div><div><strong>Practical representation</strong><br><small>Focused on the outcome that matters.</small></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="services">
+      <div class="container">
+        <div class="section-head reveal">
+          <div><div class="eyebrow">Legal services</div><h2>Areas of practice</h2></div>
+          <p>From disputes and criminal matters to family and estate-related issues, contact us to discuss the facts of your matter and whether we can assist.</p>
+        </div>
+        <div class="service-grid">
+          <article class="service reveal"><div class="service-icon">⚖</div><h3>Criminal Law</h3><p>Defence and representation in criminal matters, with careful attention to your rights and case strategy.</p></article>
+          <article class="service reveal"><div class="service-icon">§</div><h3>Civil Litigation</h3><p>Practical advice and representation in civil disputes, claims and litigation.</p></article>
+          <article class="service reveal"><div class="service-icon">◈</div><h3>Labour Matters</h3><p>Guidance and representation relating to workplace disputes and employment matters.</p></article>
+          <article class="service reveal"><div class="service-icon">♡</div><h3>Divorce Matters</h3><p>Clear guidance through divorce-related legal processes and associated disputes.</p></article>
+          <article class="service reveal"><div class="service-icon">₿</div><h3>Maintenance</h3><p>Assistance with maintenance applications, disputes and related proceedings.</p></article>
+          <article class="service reveal"><div class="service-icon">⛓</div><h3>Unlawful Arrest</h3><p>Advice and representation concerning potentially unlawful arrest and detention.</p></article>
+          <article class="service reveal"><div class="service-icon">▤</div><h3>Wills & Trusts</h3><p>Assistance with wills, trusts and planning for the orderly management of assets.</p></article>
+          <article class="service reveal"><div class="service-icon">🚗</div><h3>RAF Claims</h3><p>Guidance regarding Road Accident Fund claims and the legal process surrounding compensation.</p></article>
+          <article class="service reveal"><div class="service-icon">⌂</div><h3>Administration of Estates</h3><p>Legal assistance relating to the administration and winding-up of deceased estates.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="process">
+      <div class="container">
+        <div class="section-head reveal">
+          <div><div class="eyebrow">How we work</div><h2>A disciplined legal process.</h2></div>
+          <p>Good representation starts with good information. Our process is designed to move from facts to strategy to action.</p>
+        </div>
+        <div class="process-grid">
+          <div class="step reveal"><b>01</b><h3>Consult</h3><p>Tell us what happened, what you need and what outcome you are seeking.</p></div>
+          <div class="step reveal"><b>02</b><h3>Assess</h3><p>We identify the relevant issues, documents, risks and available legal options.</p></div>
+          <div class="step reveal"><b>03</b><h3>Strategise</h3><p>We develop a practical approach appropriate to the circumstances of your matter.</p></div>
+          <div class="step reveal"><b>04</b><h3>Act</h3><p>We proceed with the agreed legal work and keep you informed of material developments.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container cta-box">
+        <div>
+          <div class="eyebrow">Need legal assistance?</div>
+          <h2>Let's discuss your matter.</h2>
+          <p>Do not rely on generic advice when the facts of your case matter. Contact Madzena Attorneys for a consultation.</p>
+        </div>
+        <a class="btn btn-gold" href="#contact">Contact the Firm →</a>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-head reveal">
+          <div><div class="eyebrow">Contact Madzena Attorneys</div><h2>Start with a conversation.</h2></div>
+          <p>For urgent matters, calling the firm directly is recommended. For general enquiries, use the form below.</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-cards reveal">
+            <div class="contact-card"><span>Phone</span><strong><a href="tel:+27649786766">064 978 6766</a></strong><strong><a href="tel:+27720728412">072 072 8412</a></strong></div>
+            <div class="contact-card"><span>Business email</span><strong><a href="mailto:info@madzenaattorneys.co.za">info@madzenaattorneys.co.za</a></strong><small>Recommended professional mailbox — activate it on your domain.</small></div>
+            <div class="contact-card"><span>Office</span><strong>117 Klamson Towers</strong><div>149–151 Commissioner Street &amp; 49 Von Wielligh Street<br>Johannesburg, 2001</div></div>
+            <div class="contact-card"><span>WhatsApp</span><strong><a href="https://wa.me/27649786766" target="_blank" rel="noopener">Chat with Madzena Attorneys →</a></strong></div>
+          </div>
+
+          <form class="form reveal" id="contactForm">
+            <div class="form-grid">
+              <div><label for="name">Full name</label><input id="name" name="name" required autocomplete="name" placeholder="Your full name"></div>
+              <div><label for="phone">Phone number</label><input id="phone" name="phone" required autocomplete="tel" placeholder="e.g. 082 123 4567"></div>
+              <div><label for="email">Email address</label><input id="email" name="email" type="email" required autocomplete="email" placeholder="you@example.com"></div>
+              <div><label for="matter">Matter type</label>
+                <select id="matter" name="matter">
+                  <option>Criminal Law</option><option>Civil Litigation</option><option>Labour Matters</option>
+                  <option>Divorce Matters</option><option>Maintenance</option><option>Unlawful Arrest</option>
+                  <option>Wills & Trusts</option><option>RAF Claim</option><option>Administration of Estates</option><option>Other</option>
+                </select>
+              </div>
+              <div class="full"><label for="message">Brief description</label><textarea id="message" name="message" required placeholder="Briefly explain how we can assist. Do not include highly confidential information in this initial enquiry."></textarea></div>
+              <div class="full"><button class="btn btn-dark" type="submit">Prepare Enquiry →</button><div id="success">Your email application is ready. If your email client did not open, contact us directly by phone or WhatsApp.</div><div class="form-note">Submitting this form opens your email application with the enquiry addressed to the firm's business email.</div></div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="brand">
+            <div class="brand-mark" style="border-color:var(--gold);color:#fff">⚖</div>
+            <div><strong style="color:#fff">MADZENA</strong><small>ATTORNEYS</small></div>
+          </div>
+          <p style="margin-top:18px;max-width:390px">Your case, our priority. Strong defence. Clear advice. Real results.</p>
+        </div>
+        <div><h3>Quick links</h3><ul><li><a href="#about">About</a></li><li><a href="#services">Services</a></li><li><a href="#process">Our process</a></li><li><a href="#contact">Contact</a></li></ul></div>
+        <div><h3>Contact</h3><ul><li><a href="tel:+27649786766">064 978 6766</a></li><li><a href="tel:+27720728412">072 072 8412</a></li><li><a href="mailto:info@madzenaattorneys.co.za">info@madzenaattorneys.co.za</a></li><li>Johannesburg, 2001</li></ul></div>
+      </div>
+      <div class="copyright"><span>© <span id="year"></span> Madzena Attorneys. All rights reserved.</span><span>Website designed for Madzena Attorneys.</span></div>
+    </div>
+  </footer>
+
+  <script>
+    const menu = document.getElementById('menu');
+    const nav = document.getElementById('navlinks');
+    menu.addEventListener('click', () => nav.classList.toggle('open'));
+    nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => nav.classList.remove('open')));
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => { if(entry.isIntersecting) entry.target.classList.add('show'); });
+    }, {threshold:.12});
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    document.getElementById('contactForm').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const f = new FormData(e.target);
+      const subject = encodeURIComponent('New legal enquiry — ' + f.get('matter'));
+      const body = encodeURIComponent(
+        'Full name: ' + f.get('name') + '\n' +
+        'Phone: ' + f.get('phone') + '\n' +
+        'Email: ' + f.get('email') + '\n' +
+        'Matter: ' + f.get('matter') + '\n\n' +
+        'Description:\n' + f.get('message')
+      );
+      window.location.href = 'mailto:info@madzenaattorneys.co.za?subject=' + subject + '&body=' + body;
+      document.getElementById('success').style.display = 'block';
+    });
+  </script>
+</body>
+</html>
